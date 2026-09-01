@@ -179,24 +179,38 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 
 ## 你的 Agent 能做什么
 
-### 5 大类 17 个工具：
+### 6 大类 24 个工具：
 
 **认证**
 | 工具 | 干什么的 |
 |------|---------|
-| `verify_auth` | 检查 API Key 是否有效，属于哪个企业 |
+| `verify_auth` | 检查 API Key 是否有效、属于哪个企业、有哪些权限范围 |
+
+**基础信息**
+| 工具 | 干什么的 |
+|------|---------|
+| `list_programs` | 看所有项目和它们的数字员工 |
+| `create_program` | 创建新项目（至少需要一条线路） |
+| `list_bots` | 看项目里有哪些数字员工 |
+| `update_program_bots` | 设置项目的数字员工列表（整份替换） |
+| `get_line_status` | 查空闲线路数——批量推线索前先看看有没有空线 |
+| `list_trunks` | 看企业可用的线路 |
+| `list_voices` | 看企业可用的音色 |
 
 **线索管理**
 | 工具 | 干什么的 |
 |------|---------|
+| `get_lead_fields` | 推线索前先查这个数字员工要的准确字段名 |
 | `push_lead` | 把手机号推给数字员工，自动拨打 |
+| `upload_leads` | 从本地 Excel/CSV 文件批量导入线索 |
+| `download_lead_template` | 下载批量导入线索的表头模板 |
 | `query_lead` | 查一通电话的结果：接了没？聊了多久？意向如何？ |
 | `batch_query_leads` | 批量查几百条线索，按日期、项目、ID 筛选 |
+| `cancel_lead` | 撤回还在排队、尚未拨打的线索 |
 
 **项目管理**
 | 工具 | 干什么的 |
 |------|---------|
-| `list_programs` | 看所有项目和它们的数字员工 |
 | `control_program` | 一条命令启动或暂停项目 |
 | `get_program_stats` | 今天的数据：打了多少、接通率、意向分布 |
 | `get_dialing_config` | 当前配置：并发多少、什么时间段、什么优先级 |
@@ -205,10 +219,11 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 **数字员工管理**
 | 工具 | 干什么的 |
 |------|---------|
-| `list_bots` | 看项目里有哪些数字员工 |
 | `get_bot_script` | 读话术：数字员工怎么思考和说话的 |
-| `update_bot_script` | 改话术：改完下一通电话立刻生效 |
-| `download_lead_template` | 下载批量导入线索的 CSV 模板 |
+| `update_bot_script` | 改话术/欢迎语/线索字段：改完立刻生效 |
+| `update_bot_voice` | 改数字员工的音色和调音参数（语速/音量/音调/情绪） |
+| `get_bot_extract` | 看通话结束后提取哪些数据、意向结果推到哪里 |
+| `update_bot_extract` | 改提取字段和推送目标（飞书/企微/钉钉/API） |
 
 **Webhook 回调**
 | 工具 | 干什么的 |

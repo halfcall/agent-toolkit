@@ -179,24 +179,38 @@ Sign up at [halfcall.cn](https://halfcall.cn) (China), go to **Settings > API Ke
 
 ## What Your Agent Can Do
 
-### 17 tools across 5 categories:
+### 24 tools across 6 categories:
 
 **Authentication**
 | Tool | What it does |
 |------|-------------|
-| `verify_auth` | Check if the API key works and which workspace it belongs to |
+| `verify_auth` | Check if the API key works, which workspace it belongs to, and which permission scopes it has |
+
+**Basic Info**
+| Tool | What it does |
+|------|-------------|
+| `list_programs` | See all campaigns and their digital employees |
+| `create_program` | Spin up a new campaign (needs at least one line) |
+| `list_bots` | See which digital employees are in a campaign |
+| `update_program_bots` | Set a campaign's digital-employee lineup (full replace) |
+| `get_line_status` | Idle line count — check before pushing a burst of leads |
+| `list_trunks` | See calling lines available to your workspace |
+| `list_voices` | See TTS voices available to your workspace |
 
 **Lead Management**
 | Tool | What it does |
 |------|-------------|
+| `get_lead_fields` | Get the exact variable keys a bot expects, before you push |
 | `push_lead` | Push a phone number into a program. The digital employee calls it automatically. |
+| `upload_leads` | Bulk-import leads from a local Excel/CSV file |
+| `download_lead_template` | Get the header-row template for bulk lead upload |
 | `query_lead` | Check what happened on a call: did they answer? how long? interested? |
 | `batch_query_leads` | Check hundreds of leads at once. Filter by date, program, or ID. |
+| `cancel_lead` | Pull back leads that are still queued (not yet dialed) |
 
 **Campaign Management**
 | Tool | What it does |
 |------|-------------|
-| `list_programs` | See all campaigns and their digital employees |
 | `control_program` | Start or pause a campaign with one command |
 | `get_program_stats` | Today's numbers: calls made, connect rate, intent breakdown |
 | `get_dialing_config` | Current settings: how fast, what hours, what priority |
@@ -205,10 +219,11 @@ Sign up at [halfcall.cn](https://halfcall.cn) (China), go to **Settings > API Ke
 **Digital Employee Management**
 | Tool | What it does |
 |------|-------------|
-| `list_bots` | See which digital employees are in a campaign |
 | `get_bot_script` | Read the conversation script — how the digital employee thinks and talks |
-| `update_bot_script` | Change the script. New calls use the updated version immediately. |
-| `download_lead_template` | Get the CSV template for bulk lead upload |
+| `update_bot_script` | Change the script/greeting/clue fields. New calls use the updated version immediately. |
+| `update_bot_voice` | Change the digital employee's TTS voice and tuning (speed/volume/pitch/emotion) |
+| `get_bot_extract` | See what data gets pulled from calls, and where high-intent leads get pushed |
+| `update_bot_extract` | Change what gets extracted and where it's routed (Feishu/WeChat/DingTalk/API) |
 
 **Webhook**
 | Tool | What it does |
