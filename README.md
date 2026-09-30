@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="./banner.svg" alt="Onvocall Agent Toolkit" width="100%">
+  <img src="./banner.svg" alt="事半AI Agent Toolkit" width="100%">
 
   <br/>
   <br/>
 
-  **Give your AI agent a team of digital employees that think, talk, and close.**
+  **让你的 AI Agent 拥有一支会思考、会说话、能成交的数字员工团队**
 
-  [English](README.md) | [简体中文](README.zh.md)
+  [简体中文](README.md) | [English](README.en.md)
 
   <br/>
 
@@ -15,7 +15,7 @@
 
   <br/>
 
-  [Website](https://onvocall.com) · [Dashboard](https://onvocall.com/dashboard) · [中文站](https://halfcall.cn)
+  [官网](https://halfcall.cn) · [控制台](https://halfcall.cn/dashboard) · [International](https://onvocall.com)
 
 </div>
 
@@ -23,88 +23,88 @@
 
 <br/>
 
-# Onvocall Agent Toolkit — AI Digital Employees for Your Agent
+# 事半AI Agent Toolkit — 给你的 Agent 一支数字员工团队
 
-## What is Onvocall?
+## 这是什么？
 
-Onvocall is an **AI Digital Employee platform** built by [OnvoCall](https://onvocall.com) (事半科技). Each digital employee is powered by large language models, capable of real-time emotion sensing, active listening, millisecond-level response, and human-like conversation. They can be a sales manager, a customer service rep, a medical assistant, or a marketing specialist — working 24/7 without breaks.
+事半AI 是[事半科技](https://halfcall.cn)打造的 **AI 数字员工平台**。每一个数字员工都由大模型驱动，具备上下文记忆、随意打断、复杂推理、情绪感知、主动倾听、无感转人工的能力。它可以是你的销售经理、企业客服、医患助手、市场营销专员 — 7x24 小时不间断工作。
 
-Outbound calling is just one of their skills. These digital employees hold real phone conversations: greeting, pitching, handling objections, sensing tone shifts, adapting on the fly, and classifying intent. All at enterprise scale.
+打电话只是数字员工的其中一项技能。它们能进行真实的电话对话：开场白、产品介绍、异议处理、感知语气变化、实时调整策略、判断意向。全程无需人工介入，企业级并发。
 
-**Onvocall Agent Toolkit** connects your AI agent (Claude, GPT, or any MCP-compatible agent) to the Onvocall platform. Your agent can deploy digital employees, push leads, monitor call results, adjust conversation scripts in real-time, and receive instant callbacks. All through natural language.
+**事半AI Agent Toolkit** 把这些能力交给你的 AI Agent。不管你用 Claude、GPT 还是任何支持 MCP 的 Agent，都能直接部署数字员工、推送线索、实时调整话术、接收通话结果。
 
-No dashboard clicking. No CSV uploads. Tell your agent what you want. It happens.
+不用登后台。不用手动上传 Excel。告诉你的 Agent 一句话，数字员工就开始工作了。
 
-## Why Onvocall?
+## 为什么选事半AI？
 
-Traditional outbound is manual, slow, and robotic. Onvocall digital employees are different:
+传统外呼靠人工，慢、贵、机械。事半AI 的数字员工完全不同：
 
-- **They actually think** — Connected to mainstream LLMs with context memory, complex reasoning, emotion sensing, and active listening. Not robocalls. Real conversations that feel human.
-- **Interrupt anytime** — Users can cut in mid-sentence. The digital employee adapts instantly, just like talking to a real person.
-- **Enterprise scale** — Run hundreds of concurrent calls across multiple campaigns, with multiple digital employees working in parallel.
-- **Real-time intent analysis** — Every call is analyzed: HIGH interest, HESITATE, or LOW. Results return in seconds.
-- **Seamless human handoff** — When a conversation needs a real person, the digital employee transfers smoothly, no awkward transitions.
-- **Agent-native** — Built for the AI agent era. Your agent controls the entire lifecycle.
+- **真的在思考** — 接入主流大模型，支持上下文记忆和复杂推理。不是录音播放，是完整的对话和决策。
+- **随意打断** — 用户可以随时插话，数字员工瞬间调整，像跟真人聊天一样自然。
+- **情绪感知** — 实时感知语气情绪，动态调整对话策略和语速节奏。生气了放慢，感兴趣了推进。
+- **企业级并发** — 同时跑几百通电话，多个数字员工并行工作，不排队。
+- **无感转人工** — 需要真人介入时，平滑交接，不会有尴尬的断裂感。
+- **Agent 原生** — 为 AI Agent 时代设计。你的 Agent 控制整个生命周期。
 
-## What Can a Digital Employee Do?
+## 数字员工能做什么？
 
-Your AI agent manages a team of specialized digital employees through Onvocall:
+你的 AI Agent 通过事半AI 管理一支专业的数字员工团队：
 
-- **Sales Manager** — Push a prospect list, let the digital employee cold-call and pitch your product. It handles objections, gauges interest, and your agent gets back a ranked list of hot leads. Script not converting? Your agent rewrites it on the fly.
+- **拓客 AI 专员** — 把潜客名单推进去，数字员工帮你打 Cold Call 介绍产品。遇到异议它处理，判断意向它标注，打完你的 Agent 拿到一份按意向排好序的客户列表。话术效果不好？Agent 实时帮你改。
 
-- **Customer Service Rep** — 7x24 availability. Answers product questions, walks through features, sends documentation links, and escalates to human agents when needed. Logs every interaction.
+- **7x24 智能助理** — 全天候在线。接听客户咨询，解答常见问题（价格、功能、文档链接），记录无法解决的问题，需要时无感转接真人。每一次对话都有记录。
 
-- **Renewal Specialist** — Reaches out before subscriptions expire. Offers incentives, collects feedback on why someone might churn, and flags at-risk accounts. Your agent monitors retention rates in real-time.
+- **续费挽留专员** — 订阅到期前主动联系客户。提供续费优惠，收集流失原因，标记高风险账户。你的 Agent 实时监控续费率。
 
-- **Lead Qualifier** — New signups, form submissions, inbound inquiries — all pushed to a digital employee that calls to qualify. Your agent reads back who's ready to buy and who needs nurturing.
+- **线索筛选专员** — 新注册用户、表单提交、入站咨询，全部推给数字员工。它打电话确认意向，你的 Agent 告诉你哪些该跟进、哪些再培育。
 
-- **Appointment Setter** — Patient lists, member lists, client lists. The digital employee calls to schedule, confirm, or reschedule. Your agent tracks confirmation rates.
+- **预约专员** — 患者名单、会员名单、客户名单推过去，数字员工打电话预约、确认、改期。你的 Agent 追踪确认率。
 
-- **Survey Researcher** — Phone surveys at scale. Define the questions in the conversation script, push a target list, and your agent aggregates structured results.
+- **调研专员** — 大规模电话调研。在话术里定义问题，推送目标名单，Agent 帮你汇总结构化结果。
 
-- **Payment Reminder** — Gentle, natural reminders for overdue invoices, subscription renewals, or membership fees. Your agent tracks who paid and queues second-round calls for the rest.
+- **催缴专员** — 逾期账单、订阅续费、会费到期，AI 温和提醒。Agent 监控谁付了谁没付，没付的安排第二轮。
 
-- **Event Host** — Invite hundreds of contacts to your event by phone. Higher response rates than email. Your agent knows exactly who confirmed.
+- **活动邀约专员** — 电话邀请比邮件转化率高得多。推送几百个联系人，数字员工挨个打电话邀请，Agent 汇总谁确认参加。
 
-- **Reactivation Specialist** — Win back dormant users. Push churned customer lists, let the digital employee re-engage them with personalized offers, and see who's ready to come back.
+- **沉睡唤醒专员** — 流失客户召回。Agent 推送长期未活跃用户，数字员工用个性化方案重新触达，看谁愿意回来。
 
-## Not Just Calls — A Full Action Pipeline
+## 不只是打电话 — 完整的动作链
 
-A digital employee doesn't just talk. It acts. During and after every call, it can trigger a chain of automated actions based on what happens in the conversation:
+数字员工不只会说话，还会办事。每通电话的过程中和结束后，都能根据对话内容自动触发一连串动作：
 
-### During the Call
+### 通话中 — 实时动作
 
-| Action | What happens |
-|--------|-------------|
-| **Transfer to human** | Detects the customer needs a real person, transfers the call to a human agent via SIP — seamless, no hang-up |
-| **Send SMS** | Sends a text message during the call (verification code, product link, appointment confirmation) via Alibaba Cloud, Lianlu, ColorCube, or Shanhai |
-| **Call API** | Hits your backend API mid-conversation — check inventory, look up an order, create a CRM record, anything you configure |
-| **Call Webhook** | Fires a webhook to any URL with call context — trigger a Zapier flow, update a spreadsheet, notify a Slack channel |
+| 动作 | 怎么工作的 |
+|------|-----------|
+| **转接真人** | 检测到客户需要真人介入，通过 SIP 无感转接给人工坐席，不挂断不断线 |
+| **发短信** | 通话过程中发送短信（验证码、产品链接、预约确认），支持阿里云、联路、闪海等多个通道 |
+| **调用 API** | 通话中直接请求你的后端接口 — 查库存、查订单、创建 CRM 记录，你配什么它调什么 |
+| **触发 Webhook** | 通话中向任意 URL 发送请求 — 触发自动化流程、更新表格、通知频道 |
 
-### After the Call — Intent-Driven Actions
+### 通话后 — 意向驱动的自动化
 
-When the call ends, Onvocall analyzes the conversation, extracts structured data, classifies intent, and triggers actions based on the result:
+通话结束后，AI 自动分析对话内容，提取结构化数据，判定意向等级，然后按规则推送：
 
 ```
-Call ends → AI analyzes intent → Routes to action
-                ├── HIGH intent  → Push to WeChat group + add as WeChat friend
-                ├── HESITATE     → Push to Feishu with @mention for follow-up
-                ├── Ticket created → Push work order to DingTalk
-                └── Any result   → POST full call record to your server API
+通话结束 → AI 分析意向 → 按意向分发
+                ├── 高意向  → 推企微群 + 自动加微信好友
+                ├── 犹豫    → 推飞书群 @负责人跟进
+                ├── 创建工单 → 推钉钉群分配处理
+                └── 所有结果 → POST 话单到你的服务器 API
 ```
 
-| Action | What happens |
-|--------|-------------|
-| **Push to WeChat** | Send intent cards to WeChat Work groups — shows intent level, call duration, extracted fields, recording link. Auto @mentions the assigned salesperson. |
-| **Push to Feishu** | Rich cards in Feishu groups — uses Feishu App API for @mentions by phone number, includes all extracted customer data |
-| **Push to DingTalk** | Markdown messages to DingTalk groups — HMAC-SHA256 signed, with @mention support |
-| **Push to your server** | POST structured call results (phone, intent, duration, extracted fields, recording URL) to any API endpoint. Supports Bearer/Basic/API Key auth, HMAC signing, IP whitelist. Up to 3 automatic retries. |
-| **Add WeChat friend** | Auto-send friend request via WeChat Work after a high-intent call |
-| **Create work ticket** | Generate a follow-up ticket with customer info, push it to Feishu/WeChat/DingTalk groups |
+| 动作 | 怎么工作的 |
+|------|-----------|
+| **推企业微信** | 意向卡片推到企微群 — 显示意向等级、通话时长、提取字段、录音链接，自动 @负责销售 |
+| **推飞书** | 富文本卡片推到飞书群 — 通过飞书应用 API 按手机号 @对应负责人，包含全部客户数据 |
+| **推钉钉** | Markdown 消息推到钉钉群 — HMAC-SHA256 签名，支持 @指定人 |
+| **推你的服务器** | 结构化话单（手机号、意向、时长、提取字段、录音 URL）POST 到任意 API。支持 Bearer/Basic/API Key 认证、HMAC 签名、IP 白名单，自动重试 3 次 |
+| **自动加微信** | 高意向通话结束后，通过企业微信自动发送好友申请 |
+| **创建工单** | 生成跟进工单，包含客户信息，推送到飞书/微信/钉钉群分配处理 |
 
-All push actions include retry with exponential backoff (2s → 4s → 8s, up to 3 attempts). Failed pushes are tracked and retried by a background scheduler every minute.
+所有推送都有指数退避重试（2 秒 → 4 秒 → 8 秒，最多 3 次）。失败的推送由后台调度器每分钟扫描重试。
 
-### The Complete Flow
+### 完整流程
 
 > **API Key** → **Agent push lead** → **Digital employee calls** → **Mid-call actions** → **AI intent analysis** → **Auto push**
 
@@ -122,20 +122,20 @@ All push actions include retry with exponential backoff (2s → 4s → 8s, up to
                                                                   └─> Add WeChat friend
 ```
 
-1. **Agent pushes a lead** — phone number + optional context (name, company, reason)
-2. **Digital employee calls** — natural conversation with emotion sensing and active listening
-3. **Mid-call actions fire** — SMS, transfer to human, API calls, webhooks
-4. **Post-call pipeline** — AI extracts intent → pushes to WeChat / Feishu / DingTalk / your server, creates tickets, adds friends
+1. **Agent push lead** — phone + optional variables (name, company, reason)
+2. **Digital employee calls** — natural conversation with emotion sensing
+3. **Mid-call actions fire** — SMS, transfer, API calls, webhooks
+4. **Post-call pipeline** — AI extracts intent → pushes to WeChat / Feishu / DingTalk / your API, creates tickets, adds friends
 
-That's it. Your agent has a team that doesn't just talk — they close.
+Your Agent now has a team that doesn't just talk — they close.
 
-## Quick Start
+## 快速开始
 
-### Option A: MCP Server
+### 方式 A：MCP Server
 
-Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
+适用于 Claude Desktop、Claude Code 或任何 MCP 兼容客户端。
 
-**Claude Desktop** — add to `claude_desktop_config.json`:
+**Claude Desktop** — 添加到 `claude_desktop_config.json`：
 ```json
 {
   "mcpServers": {
@@ -143,14 +143,14 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
       "command": "npx",
       "args": ["-y", "smartcall-agent-toolkit"],
       "env": {
-        "SMARTCALL_API_KEY": "sk-your-api-key"
+        "SMARTCALL_API_KEY": "sk-你的密钥"
       }
     }
   }
 }
 ```
 
-**Claude Code** — add to `.mcp.json` or `~/.claude/mcp.json`:
+**Claude Code** — 添加到 `.mcp.json` 或 `~/.claude/mcp.json`：
 ```json
 {
   "mcpServers": {
@@ -158,124 +158,124 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
       "command": "npx",
       "args": ["-y", "smartcall-agent-toolkit"],
       "env": {
-        "SMARTCALL_API_KEY": "sk-your-api-key"
+        "SMARTCALL_API_KEY": "sk-你的密钥"
       }
     }
   }
 }
 ```
 
-### Option B: Claude Code Skill (optional, on top of Option A)
+### 方式 B：Claude Code Skill（可选，需先配好方式 A）
 
-The skill teaches Claude the platform's concepts and workflows; the tools themselves still come from the MCP server, so configure Option A first.
+Skill 教 Claude 理解平台概念和常用流程；工具本身仍由 MCP Server 提供，所以要先按方式 A 配好。
 
 ```bash
 git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/smartcall
 ```
 
-Then type `/smartcall` in Claude Code to activate.
+在 Claude Code 里输入 `/smartcall` 即可激活。
 
-### Get Your API Key
+### 获取 API Key
 
-Sign up at [halfcall.cn](https://halfcall.cn) (China), go to **Settings > API Keys**, and create a new key. International site [onvocall.com](https://onvocall.com) coming soon.
+在 [halfcall.cn](https://halfcall.cn)（国内）注册，进入 **设置 > API 密钥**，创建新密钥。海外站 [onvocall.com](https://onvocall.com) 即将上线。
 
-## What Your Agent Can Do
+## 你的 Agent 能做什么
 
-### 26 built-in tools across 6 categories (plus the platform assistant tools below):
+### 6 大类 26 个内置工具（另有下面的平台助手工具）：
 
-**Authentication**
-| Tool | What it does |
-|------|-------------|
-| `verify_auth` | Check if the API key works, which workspace it belongs to, and which permission scopes it has |
+**认证**
+| 工具 | 干什么的 |
+|------|---------|
+| `verify_auth` | 检查 API Key 是否有效、属于哪个企业、有哪些权限范围 |
 
-**Basic Info**
-| Tool | What it does |
-|------|-------------|
-| `list_programs` | See all campaigns and their digital employees |
-| `create_program` | Spin up a new campaign (needs at least one line) |
-| `list_bots` | See which digital employees are in a campaign |
-| `update_program_bots` | Set a campaign's digital-employee lineup (full replace) |
-| `get_line_status` | Idle line count — check before pushing a burst of leads |
-| `list_trunks` | See calling lines available to your workspace |
-| `list_voices` | See TTS voices available to your workspace |
+**基础信息**
+| 工具 | 干什么的 |
+|------|---------|
+| `list_programs` | 看所有项目和它们的数字员工 |
+| `create_program` | 创建新项目（至少需要一条线路） |
+| `list_bots` | 看项目里有哪些数字员工 |
+| `update_program_bots` | 设置项目的数字员工列表（整份替换） |
+| `get_line_status` | 查空闲线路数——批量推线索前先看看有没有空线 |
+| `list_trunks` | 看企业可用的线路 |
+| `list_voices` | 看企业可用的音色 |
 
-**Lead Management**
-| Tool | What it does |
-|------|-------------|
-| `get_lead_fields` | Get the exact variable keys a bot expects, before you push |
-| `push_lead` | Push a phone number into a program. The digital employee calls it automatically. |
-| `upload_leads` | Bulk-import leads from a local Excel/CSV file |
-| `download_lead_template` | Get the header-row template for bulk lead upload |
-| `query_lead` | Check what happened on a call: did they answer? how long? interested? |
-| `batch_query_leads` | Check hundreds of leads at once. Filter by date, program, or ID. |
-| `cancel_lead` | Pull back leads that are still queued (not yet dialed) |
+**线索管理**
+| 工具 | 干什么的 |
+|------|---------|
+| `get_lead_fields` | 推线索前先查这个数字员工要的准确字段名 |
+| `push_lead` | 把手机号推给数字员工，自动拨打 |
+| `upload_leads` | 从本地 Excel/CSV 文件批量导入线索 |
+| `download_lead_template` | 下载批量导入线索的表头模板 |
+| `query_lead` | 查一通电话的结果：接了没？聊了多久？意向如何？ |
+| `batch_query_leads` | 批量查几百条线索，按日期、项目、ID 筛选 |
+| `cancel_lead` | 撤回还在排队、尚未拨打的线索 |
 
-**Campaign Management**
-| Tool | What it does |
-|------|-------------|
-| `control_program` | Start or pause a campaign with one command |
-| `get_program_stats` | Today's numbers: calls made, connect rate, intent breakdown |
-| `get_dialing_config` | Current settings: how fast, what hours, what priority |
-| `update_dialing_config` | Tune the dialer: more concurrent calls, different hours, etc. |
+**项目管理**
+| 工具 | 干什么的 |
+|------|---------|
+| `control_program` | 一条命令启动或暂停项目 |
+| `get_program_stats` | 今天的数据：打了多少、接通率、意向分布 |
+| `get_dialing_config` | 当前配置：并发多少、什么时间段、什么优先级 |
+| `update_dialing_config` | 调参数：加并发、改时段、换策略 |
 
-**Digital Employee Management**
-| Tool | What it does |
-|------|-------------|
-| `get_bot_script` | Read the conversation script — how the digital employee thinks and talks |
-| `update_bot_script` | Change the script/greeting/clue fields. New calls use the updated version immediately. |
-| `update_bot_voice` | Change the digital employee's TTS voice and tuning (speed/volume/pitch/emotion) |
-| `get_bot_extract` | See what data gets pulled from calls, and where high-intent leads get pushed |
-| `update_bot_extract` | Change what gets extracted and where it's routed (Feishu/WeChat/DingTalk/API) |
+**数字员工管理**
+| 工具 | 干什么的 |
+|------|---------|
+| `get_bot_script` | 读话术：数字员工怎么思考和说话的 |
+| `update_bot_script` | 改话术/欢迎语/线索字段：改完立刻生效 |
+| `update_bot_voice` | 改数字员工的音色和调音参数（语速/音量/音调/情绪） |
+| `get_bot_extract` | 看通话结束后提取哪些数据、意向结果推到哪里 |
+| `update_bot_extract` | 改提取字段和推送目标（飞书/企微/钉钉/API） |
 
-**Webhook**
-| Tool | What it does |
-|------|-------------|
-| `get_webhook` | Check if real-time callbacks are configured |
-| `update_webhook` | Set a URL to receive POST notifications after every call |
+**Webhook 回调**
+| 工具 | 干什么的 |
+|------|---------|
+| `get_webhook` | 看有没有配实时回调 |
+| `update_webhook` | 配一个 URL，每通电话打完自动 POST 结果过去 |
 
-**Platform assistant tools (loaded dynamically, new in 0.3.0)**
+**平台助手工具（启动时动态加载，0.3.0 新增）**
 
-On startup the toolkit also pulls the same tools the platform's own WeChat assistant uses, straight from the backend — new capabilities appear without a toolkit release. Permissions follow **the API key's creator** (same rules as the dashboard: department project scope, "collaboration" switches for editing scripts/lines), narrowed further by the key's scopes. Only tools the key can use are registered. Descriptions and results are in Chinese.
+启动时 toolkit 会从后端拉取平台自己的微信助手「花花」在用的同一套工具，平台上线新能力不用等 toolkit 发版。权限按 **API Key 创建人** 在网页上的权限走（部门项目范围、改话术要开通协作权限、改线路要开通协作线路），再被 Key 的 scope 收窄；只注册这个 Key 能用的工具。
 
-| Tool | What it does |
-|------|-------------|
-| `query_status` | Today's calls / connects / high-intent per project |
-| `check_balance` | Workspace balance and plan |
-| `export_leads_excel` | Filter leads (date, tag, intent, connected, duration…) and export Excel with chosen columns incl. recordings — returns a download link |
-| `redial_leads` | Re-queue leads on the original list by the same filters (preview first, then confirm) |
-| `pause_resume`, `modify_work_time`, `modify_concurrency` | Run control and dialing strategy |
-| `modify_trunk`, `modify_trunk_concurrency` | Switch lines / line concurrency (needs "collaboration lines") |
-| `update_bot`, `modify_welcome`, `toggle_bot_feature`, `regen_bot` | Edit prompt, opener, voice, features (needs "collaboration") |
-| `platform_list_voices` | Voices filtered by tags (gender / age / industry / style) |
-| `new_project` → `confirm_step` / `revise_step` / `cancel_step` / `provide_trial_phone` | Create a project from one sentence, preview, trial call |
-| `import_leads_batch`, `push_lead_to_dial`, `trigger_test_call`, `generate_recharge_qrcode`, `update_project` | Leads, trial calls, top-up QR code, project settings |
+| 工具 | 干什么的 |
+|------|---------|
+| `query_status` | 各项目今日拨打 / 接通 / 高意向 |
+| `check_balance` | 企业余额和套餐 |
+| `export_leads_excel` | 按时间、线索标签、意向、接通情况、通话时长等筛选导出 Excel，可自选列（含录音、外部评分），返回下载链接 |
+| `redial_leads` | 同一套筛选条件，在原线索上重新排队拨打（先预览再确认） |
+| `pause_resume`、`modify_work_time`、`modify_concurrency` | 启停、拨打时间、并发 |
+| `modify_trunk`、`modify_trunk_concurrency` | 换线路 / 改线路并发（需开通协作线路） |
+| `update_bot`、`modify_welcome`、`toggle_bot_feature`、`regen_bot` | 改提示词、开场白、音色、功能开关（需开通协作权限） |
+| `platform_list_voices` | 按标签（性别 / 年龄 / 行业 / 风格）挑音色 |
+| `new_project` → `confirm_step` / `revise_step` / `cancel_step` / `provide_trial_phone` | 一句话建项目、预览、试拨 |
+| `import_leads_batch`、`push_lead_to_dial`、`trigger_test_call`、`generate_recharge_qrcode`、`update_project` | 导线索、试拨、充值二维码、项目设置 |
 
-Tools whose names clash with built-in ones get a `platform_` prefix (`platform_list_programs`, `platform_list_voices`).
+和内置工具重名的会加 `platform_` 前缀（`platform_list_programs`、`platform_list_voices`）。
 
-## Talk to Your Agent Naturally
+## 跟你的 Agent 说人话就行
 
-> "Push these 50 phone numbers to the sales digital employee and let me know when we have results."
+> "把这 50 个手机号推给销售数字员工，有结果了告诉我。"
 
-> "How's the renewal campaign doing today? What's our connect rate?"
+> "今天续费项目跑得怎么样？接通率多少？"
 
-> "The digital employee's opening is too aggressive. Pull up the script and make it more conversational."
+> "数字员工开场白太生硬了，拿出来改一下，语气自然点。"
 
-> "Set up a webhook so every call result gets pushed to our Slack channel."
+> "配个 webhook，每通电话结果推到我们的飞书。"
 
-> "Pause the reminder campaign, it's after business hours."
+> "暂停催收项目，已经下班了。"
 
-> "Show me all the high-intent leads from yesterday's run."
+> "把昨天的高意向客户全拉出来看看。"
 
-## Environment Variables
+## 环境变量
 
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `SMARTCALL_API_KEY` | Yes | — | Your API key from the dashboard |
-| `SMARTCALL_BASE_URL` | No | `https://api.halfcall.cn` | API endpoint. Keep the default — halfcall.cn, uereport.com and onvocall.com accounts all use the same platform and the same API keys |
-| `SMARTCALL_TIMEOUT` | No | `30000` | Request timeout in milliseconds |
-| `SMARTCALL_SESSION_ID` | No | random per process | Conversation id for multi-step platform flows (e.g. project creation); set it to share state across restarts |
+| 变量 | 必填 | 默认值 | 说明 |
+|------|------|--------|------|
+| `SMARTCALL_API_KEY` | 是 | — | 控制台里拿的 API 密钥 |
+| `SMARTCALL_BASE_URL` | 否 | `https://api.halfcall.cn` | API 地址，保持默认即可——halfcall.cn、uereport.com、onvocall.com 的账号都是同一个平台、同一套 API Key |
+| `SMARTCALL_TIMEOUT` | 否 | `30000` | 请求超时（毫秒） |
+| `SMARTCALL_SESSION_ID` | 否 | 每个进程随机 | 多步流程（如建项目）的会话 id；想在重启后接着之前的流程就固定一个值 |
 
-## Development
+## 本地开发
 
 ```bash
 git clone git@github.com:halfcall/agent-toolkit.git
@@ -283,19 +283,19 @@ cd agent-toolkit
 npm install
 npm run build
 
-# Run locally
+# 本地运行
 SMARTCALL_API_KEY=sk-xxx npm start
 ```
 
-## About
+## 关于我们
 
-Onvocall Agent Toolkit is open source and maintained by [OnvoCall](https://onvocall.com) (事半科技).
+事半AI Agent Toolkit 由[事半科技](https://halfcall.cn)开源维护。
 
-Onvocall builds digital employees that think, listen, and talk like real people. Every enterprise deserves its own team of digital employees.
+事半AI 打造会思考的数字员工。让每个企业都能拥有自己的数字员工团队。
 
-- International: [onvocall.com](https://onvocall.com)
-- China: [halfcall.cn](https://halfcall.cn)
+- 国内站：[halfcall.cn](https://halfcall.cn)
+- 海外站：[onvocall.com](https://onvocall.com)
 
-## License
+## 开源协议
 
 [MIT](LICENSE)
