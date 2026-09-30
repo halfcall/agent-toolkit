@@ -76,7 +76,7 @@ If a tool call 403s with "missing required scope", tell the user which scope to 
 
 Before any operation, call `verify_auth` to confirm the key is valid, which workspace it belongs to, and which scopes it has. If auth fails, do NOT proceed — tell the user to check their API key.
 
-## Available Tools (24 total)
+## Built-in Tools (26)
 
 ### Authentication
 | Tool | Parameters | Scope | Description |
@@ -127,6 +127,17 @@ Before any operation, call `verify_auth` to confirm the key is valid, which work
 |------|-----------|-------|-------------|
 | `get_webhook` | `programId` | READ | Current webhook URL + whether a secret is set |
 | `update_webhook` | `programId`, `webhookUrl?`, `webhookSecret?` | CONTROL | Set/clear the webhook. **This is the lightweight mechanism only** — see below. |
+
+## Platform assistant tools (dynamic, 0.3.0+)
+
+Besides the built-in tools above, the toolkit registers the platform's own assistant tools at startup (`GET /api/v1/external/mcp/tools`). Their descriptions and results are in **Chinese**; relay results to the user in their language.
+
+- **Who is acting**: the API key's creator. Permissions are exactly the dashboard's for that person (department project scope; editing prompt/opener/voice/features needs the workspace's "协作权限", editing lines needs "协作线路"; role limits like 外勤 cannot export). The key's scopes can only narrow this further. When a call is refused, the result explains why — pass that on instead of retrying.
+- **Workspace** is fixed to the key's workspace; there is no workspace switching.
+- **Projects are addressed by name**, not id: pass `projectHint` (project name, digital-employee name or its 8-digit number).
+- **Prefer these over built-ins for**: filtered lead export with recordings (`export_leads_excel` → returns `downloadUrl`), re-dialing by filters (`redial_leads`, two-step: preview then `confirm: "true"`), balance (`check_balance`), today's overview (`query_status`), voice picking by tags (`platform_list_voices` then `update_bot` with `field: "voice"` and the voice id), line switching (`modify_trunk`).
+- **Multi-step flows** (`new_project` → `confirm_step` / `revise_step` / `cancel_step` / `provide_trial_phone`) keep state per toolkit process (`SMARTCALL_SESSION_ID`). Show each step's result to the user and wait for their confirmation before calling `confirm_step`.
+- Built-in and platform tools with the same name: the platform one is prefixed `platform_`.
 
 ## Two different webhook mechanisms — don't conflate them
 

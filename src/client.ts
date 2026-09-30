@@ -286,11 +286,21 @@ export class SmartCallClient {
 
   // ── HTTP helpers ──────────────────────────────────────
 
+  // ── Platform tools (同花花的 MCP 工具，由后端动态下发) ─────
+
+  async listPlatformTools(): Promise<any> {
+    return this.request('GET', '/api/v1/external/mcp/tools')
+  }
+
+  async callPlatformTool(name: string, args: Record<string, any>, sessionId: string): Promise<any> {
+    return this.request('POST', '/api/v1/external/mcp/call', { name, arguments: args, sessionId })
+  }
+
   private async request(method: string, path: string, body?: any): Promise<any> {
     const url = `${this.baseUrl}${path}`
     const headers: Record<string, string> = {
       'Authorization': `Bearer ${this.apiKey}`,
-      'User-Agent': 'smartcall-agent-toolkit/0.2.0',
+      'User-Agent': 'smartcall-agent-toolkit/0.3.0',
     }
 
     const init: RequestInit = {

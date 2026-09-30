@@ -231,6 +231,25 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 | `get_webhook` | 看有没有配实时回调 |
 | `update_webhook` | 配一个 URL，每通电话打完自动 POST 结果过去 |
 
+**平台助手工具（启动时动态加载，0.3.0 新增）**
+
+启动时 toolkit 会从后端拉取平台自己的微信助手「花花」在用的同一套工具，平台上线新能力不用等 toolkit 发版。权限按 **API Key 创建人** 在网页上的权限走（部门项目范围、改话术要开通协作权限、改线路要开通协作线路），再被 Key 的 scope 收窄；只注册这个 Key 能用的工具。
+
+| 工具 | 干什么的 |
+|------|---------|
+| `query_status` | 各项目今日拨打 / 接通 / 高意向 |
+| `check_balance` | 企业余额和套餐 |
+| `export_leads_excel` | 按时间、线索标签、意向、接通情况、通话时长等筛选导出 Excel，可自选列（含录音、外部评分），返回下载链接 |
+| `redial_leads` | 同一套筛选条件，在原线索上重新排队拨打（先预览再确认） |
+| `pause_resume`、`modify_work_time`、`modify_concurrency` | 启停、拨打时间、并发 |
+| `modify_trunk`、`modify_trunk_concurrency` | 换线路 / 改线路并发（需开通协作线路） |
+| `update_bot`、`modify_welcome`、`toggle_bot_feature`、`regen_bot` | 改提示词、开场白、音色、功能开关（需开通协作权限） |
+| `platform_list_voices` | 按标签（性别 / 年龄 / 行业 / 风格）挑音色 |
+| `new_project` → `confirm_step` / `revise_step` / `cancel_step` / `provide_trial_phone` | 一句话建项目、预览、试拨 |
+| `import_leads_batch`、`push_lead_to_dial`、`trigger_test_call`、`generate_recharge_qrcode`、`update_project` | 导线索、试拨、充值二维码、项目设置 |
+
+和内置工具重名的会加 `platform_` 前缀（`platform_list_programs`、`platform_list_voices`）。
+
 ## 跟你的 Agent 说人话就行
 
 > "把这 50 个手机号推给销售数字员工，有结果了告诉我。"
@@ -252,6 +271,7 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 | `SMARTCALL_API_KEY` | 是 | — | 控制台里拿的 API 密钥 |
 | `SMARTCALL_BASE_URL` | 否 | `https://api.halfcall.cn` | API 地址 |
 | `SMARTCALL_TIMEOUT` | 否 | `30000` | 请求超时（毫秒） |
+| `SMARTCALL_SESSION_ID` | 否 | 每个进程随机 | 多步流程（如建项目）的会话 id；想在重启后接着之前的流程就固定一个值 |
 
 ## 本地开发
 

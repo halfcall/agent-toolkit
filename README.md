@@ -231,6 +231,25 @@ Sign up at [halfcall.cn](https://halfcall.cn) (China), go to **Settings > API Ke
 | `get_webhook` | Check if real-time callbacks are configured |
 | `update_webhook` | Set a URL to receive POST notifications after every call |
 
+**Platform assistant tools (loaded dynamically, new in 0.3.0)**
+
+On startup the toolkit also pulls the same tools the platform's own WeChat assistant uses, straight from the backend — new capabilities appear without a toolkit release. Permissions follow **the API key's creator** (same rules as the dashboard: department project scope, "collaboration" switches for editing scripts/lines), narrowed further by the key's scopes. Only tools the key can use are registered. Descriptions and results are in Chinese.
+
+| Tool | What it does |
+|------|-------------|
+| `query_status` | Today's calls / connects / high-intent per project |
+| `check_balance` | Workspace balance and plan |
+| `export_leads_excel` | Filter leads (date, tag, intent, connected, duration…) and export Excel with chosen columns incl. recordings — returns a download link |
+| `redial_leads` | Re-queue leads on the original list by the same filters (preview first, then confirm) |
+| `pause_resume`, `modify_work_time`, `modify_concurrency` | Run control and dialing strategy |
+| `modify_trunk`, `modify_trunk_concurrency` | Switch lines / line concurrency (needs "collaboration lines") |
+| `update_bot`, `modify_welcome`, `toggle_bot_feature`, `regen_bot` | Edit prompt, opener, voice, features (needs "collaboration") |
+| `platform_list_voices` | Voices filtered by tags (gender / age / industry / style) |
+| `new_project` → `confirm_step` / `revise_step` / `cancel_step` / `provide_trial_phone` | Create a project from one sentence, preview, trial call |
+| `import_leads_batch`, `push_lead_to_dial`, `trigger_test_call`, `generate_recharge_qrcode`, `update_project` | Leads, trial calls, top-up QR code, project settings |
+
+Tools whose names clash with built-in ones get a `platform_` prefix (`platform_list_programs`, `platform_list_voices`).
+
 ## Talk to Your Agent Naturally
 
 > "Push these 50 phone numbers to the sales digital employee and let me know when we have results."
@@ -252,6 +271,7 @@ Sign up at [halfcall.cn](https://halfcall.cn) (China), go to **Settings > API Ke
 | `SMARTCALL_API_KEY` | Yes | — | Your API key from the dashboard |
 | `SMARTCALL_BASE_URL` | No | `https://api.halfcall.cn` | API endpoint (change for onvocall.com) |
 | `SMARTCALL_TIMEOUT` | No | `30000` | Request timeout in milliseconds |
+| `SMARTCALL_SESSION_ID` | No | random per process | Conversation id for multi-step platform flows (e.g. project creation); set it to share state across restarts |
 
 ## Development
 

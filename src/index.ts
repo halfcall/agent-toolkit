@@ -17,6 +17,7 @@ import { registerAuthTools } from './tools/auth.js'
 import { registerLeadTools } from './tools/leads.js'
 import { registerProgramTools } from './tools/programs.js'
 import { registerBotTools } from './tools/bots.js'
+import { registerPlatformTools } from './tools/platform.js'
 
 const API_KEY = process.env.SMARTCALL_API_KEY
 const BASE_URL = process.env.SMARTCALL_BASE_URL ?? 'https://api.halfcall.cn'
@@ -36,7 +37,7 @@ const client = new SmartCallClient({
 
 const server = new McpServer({
   name: 'smartcall',
-  version: '0.1.0',
+  version: '0.3.0',
   description: 'Smart-Call AI Outbound Calling Platform. Push leads, manage programs, control bots, and query call results.',
 })
 
@@ -45,6 +46,11 @@ registerAuthTools(server, client)
 registerLeadTools(server, client)
 registerProgramTools(server, client)
 registerBotTools(server, client)
+
+// Platform tools (same as the platform's WeChat assistant): fetched from the backend at startup
+const localNames = new Set<string>(Object.keys((server as any)._registeredTools ?? {}))
+const platformCount = await registerPlatformTools(server, client, localNames)
+if (platformCount > 0) console.error(`[smartcall] ${platformCount} platform tools registered`)
 
 // Start stdio transport
 const transport = new StdioServerTransport()
