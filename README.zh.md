@@ -170,7 +170,7 @@ Your Agent now has a team that doesn't just talk — they close.
 Skill 教 Claude 理解平台概念和常用流程；工具本身仍由 MCP Server 提供，所以要先按方式 A 配好。
 
 ```bash
-git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartcall
+git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/smartcall
 ```
 
 在 Claude Code 里输入 `/smartcall` 即可激活。
@@ -278,7 +278,7 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 ## 本地开发
 
 ```bash
-git clone git@github.com:smart-aicall/agent-toolkit.git
+git clone git@github.com:halfcall/agent-toolkit.git
 cd agent-toolkit
 npm install
 npm run build

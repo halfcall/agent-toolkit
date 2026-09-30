@@ -170,7 +170,7 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
 The skill teaches Claude the platform's concepts and workflows; the tools themselves still come from the MCP server, so configure Option A first.
 
 ```bash
-git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartcall
+git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/smartcall
 ```
 
 Then type `/smartcall` in Claude Code to activate.
@@ -278,7 +278,7 @@ Tools whose names clash with built-in ones get a `platform_` prefix (`platform_l
 ## Development
 
 ```bash
-git clone git@github.com:smart-aicall/agent-toolkit.git
+git clone git@github.com:halfcall/agent-toolkit.git
 cd agent-toolkit
 npm install
 npm run build
