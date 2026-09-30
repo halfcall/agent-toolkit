@@ -300,7 +300,7 @@ export class SmartCallClient {
     const url = `${this.baseUrl}${path}`
     const headers: Record<string, string> = {
       'Authorization': `Bearer ${this.apiKey}`,
-      'User-Agent': 'smartcall-agent-toolkit/0.3.0',
+      'User-Agent': 'smartcall-agent-toolkit/0.3.1',
     }
 
     const init: RequestInit = {

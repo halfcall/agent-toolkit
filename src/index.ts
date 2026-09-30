@@ -37,7 +37,7 @@ const client = new SmartCallClient({
 
 const server = new McpServer({
   name: 'smartcall',
-  version: '0.3.0',
+  version: '0.3.1',
   description: 'Smart-Call AI Outbound Calling Platform. Push leads, manage programs, control bots, and query call results.',
 })
 

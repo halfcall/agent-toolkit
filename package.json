@@ -1,6 +1,6 @@
 {
   "name": "smartcall-agent-toolkit",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Agent toolkit for Smart-Call AI Outbound Platform — give any AI agent the power of enterprise-grade AI outbound calling",
   "license": "MIT",
   "type": "module",
