@@ -57,7 +57,7 @@ If it fails or the tools are not available, the user needs to configure it:
 
 **For Claude Code** (`.mcp.json` or `~/.claude/mcp.json`): same shape as above.
 
-**API key**: Users get this from the dashboard → Settings → API Keys. **`SMARTCALL_BASE_URL` matters** — it defaults to `https://api.halfcall.cn`; on other deployments (e.g. `https://api.uereport.com`) it must be set explicitly, or every call will hit the wrong tenant's API.
+**API key**: Users get this from the dashboard → Settings → API Keys. `SMARTCALL_BASE_URL` defaults to `https://api.halfcall.cn` and can stay that way: halfcall.cn, uereport.com and onvocall.com accounts are one platform sharing the same API keys (`https://api.uereport.com` also works; `api.onvocall.com` does not serve the API).
 
 ### Step 2: Know the permission scopes before you start
 

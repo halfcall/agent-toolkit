@@ -165,7 +165,9 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
 }
 ```
 
-### Option B: Claude Code Skill
+### Option B: Claude Code Skill (optional, on top of Option A)
+
+The skill teaches Claude the platform's concepts and workflows; the tools themselves still come from the MCP server, so configure Option A first.
 
 ```bash
 git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartcall
@@ -179,7 +181,7 @@ Sign up at [halfcall.cn](https://halfcall.cn) (China), go to **Settings > API Ke
 
 ## What Your Agent Can Do
 
-### 24 tools across 6 categories:
+### 26 built-in tools across 6 categories (plus the platform assistant tools below):
 
 **Authentication**
 | Tool | What it does |
@@ -269,7 +271,7 @@ Tools whose names clash with built-in ones get a `platform_` prefix (`platform_l
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
 | `SMARTCALL_API_KEY` | Yes | — | Your API key from the dashboard |
-| `SMARTCALL_BASE_URL` | No | `https://api.halfcall.cn` | API endpoint (change for onvocall.com) |
+| `SMARTCALL_BASE_URL` | No | `https://api.halfcall.cn` | API endpoint. Keep the default — halfcall.cn, uereport.com and onvocall.com accounts all use the same platform and the same API keys |
 | `SMARTCALL_TIMEOUT` | No | `30000` | Request timeout in milliseconds |
 | `SMARTCALL_SESSION_ID` | No | random per process | Conversation id for multi-step platform flows (e.g. project creation); set it to share state across restarts |
 

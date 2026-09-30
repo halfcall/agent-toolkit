@@ -165,7 +165,9 @@ Your Agent now has a team that doesn't just talk — they close.
 }
 ```
 
-### 方式 B：Claude Code Skill
+### 方式 B：Claude Code Skill（可选，需先配好方式 A）
+
+Skill 教 Claude 理解平台概念和常用流程；工具本身仍由 MCP Server 提供，所以要先按方式 A 配好。
 
 ```bash
 git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartcall
@@ -179,7 +181,7 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 
 ## 你的 Agent 能做什么
 
-### 6 大类 24 个工具：
+### 6 大类 26 个内置工具（另有下面的平台助手工具）：
 
 **认证**
 | 工具 | 干什么的 |
@@ -269,7 +271,7 @@ git clone git@github.com:smart-aicall/agent-toolkit.git ~/.claude/skills/smartca
 | 变量 | 必填 | 默认值 | 说明 |
 |------|------|--------|------|
 | `SMARTCALL_API_KEY` | 是 | — | 控制台里拿的 API 密钥 |
-| `SMARTCALL_BASE_URL` | 否 | `https://api.halfcall.cn` | API 地址 |
+| `SMARTCALL_BASE_URL` | 否 | `https://api.halfcall.cn` | API 地址，保持默认即可——halfcall.cn、uereport.com、onvocall.com 的账号都是同一个平台、同一套 API Key |
 | `SMARTCALL_TIMEOUT` | 否 | `30000` | 请求超时（毫秒） |
 | `SMARTCALL_SESSION_ID` | 否 | 每个进程随机 | 多步流程（如建项目）的会话 id；想在重启后接着之前的流程就固定一个值 |
 
