@@ -1,14 +1,14 @@
 /**
- * Smart-Call API Client
+ * HalfCall API Client
  *
- * Thin HTTP wrapper over the Smart-Call External API.
+ * Thin HTTP wrapper over the HalfCall External API.
  * All methods return parsed JSON; errors throw with status + message.
  */
 
 import { readFile } from 'node:fs/promises'
 import { basename } from 'node:path'
 
-export interface SmartCallClientConfig {
+export interface HalfCallClientConfig {
   apiKey: string
   baseUrl: string
   /** Request timeout in ms, default 30000 */
@@ -22,12 +22,12 @@ export interface ClueItem {
   required?: boolean
 }
 
-export class SmartCallClient {
+export class HalfCallClient {
   private apiKey: string
   private baseUrl: string
   private timeout: number
 
-  constructor(config: SmartCallClientConfig) {
+  constructor(config: HalfCallClientConfig) {
     this.apiKey = config.apiKey
     this.baseUrl = config.baseUrl.replace(/\/+$/, '')
     this.timeout = config.timeout ?? 30_000
@@ -300,7 +300,7 @@ export class SmartCallClient {
     const url = `${this.baseUrl}${path}`
     const headers: Record<string, string> = {
       'Authorization': `Bearer ${this.apiKey}`,
-      'User-Agent': 'smartcall-agent-toolkit/0.3.2',
+      'User-Agent': 'halfcall-agent-toolkit/0.4.0',
     }
 
     const init: RequestInit = {
@@ -319,7 +319,7 @@ export class SmartCallClient {
 
     if (!res.ok) {
       const msg = data?.msg || data?.message || res.statusText
-      throw new Error(`Smart-Call API error ${res.status}: ${msg}`)
+      throw new Error(`HalfCall API error ${res.status}: ${msg}`)
     }
 
     return data
@@ -336,7 +336,7 @@ export class SmartCallClient {
     const data: any = await res.json()
     if (!res.ok) {
       const msg = data?.msg || data?.message || res.statusText
-      throw new Error(`Smart-Call API error ${res.status}: ${msg}`)
+      throw new Error(`HalfCall API error ${res.status}: ${msg}`)
     }
     return data
   }
@@ -351,7 +351,7 @@ export class SmartCallClient {
     if (!res.ok) {
       // Error responses are JSON, unlike the successful binary payload.
       const data: any = await res.json().catch(() => ({}))
-      throw new Error(`Smart-Call API error ${res.status}: ${data?.msg || data?.message || res.statusText}`)
+      throw new Error(`HalfCall API error ${res.status}: ${data?.msg || data?.message || res.statusText}`)
     }
     const buf = new Uint8Array(await res.arrayBuffer())
     const disposition = res.headers.get('content-disposition')

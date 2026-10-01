@@ -1,7 +1,7 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
-import type { SmartCallClient } from '../client.js'
+import type { HalfCallClient } from '../client.js'
 
-export function registerAuthTools(server: McpServer, client: SmartCallClient) {
+export function registerAuthTools(server: McpServer, client: HalfCallClient) {
   server.registerTool(
     'verify_auth',
     {

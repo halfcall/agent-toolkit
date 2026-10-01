@@ -1,11 +1,11 @@
 {
-  "name": "smartcall-agent-toolkit",
-  "version": "0.3.2",
-  "description": "Agent toolkit for Smart-Call AI Outbound Platform — give any AI agent the power of enterprise-grade AI outbound calling",
+  "name": "halfcall-agent-toolkit",
+  "version": "0.4.0",
+  "description": "Agent toolkit for HalfCall (事半AI) digital employee platform — give any AI agent a team of AI phone agents",
   "license": "MIT",
   "type": "module",
   "bin": {
-    "smartcall-agent-toolkit": "./dist/index.js"
+    "halfcall-agent-toolkit": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -31,7 +31,8 @@
   },
   "keywords": [
     "mcp",
-    "smart-call",
+    "halfcall",
+    "事半AI",
     "ai-calling",
     "outbound",
     "voice-ai",

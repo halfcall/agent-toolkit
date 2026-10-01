@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto'
 import { z } from 'zod'
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
-import type { SmartCallClient } from '../client.js'
+import type { HalfCallClient } from '../client.js'
 
 /**
  * Platform tools — the same MCP tools the platform's own WeChat assistant ("花花") uses,
@@ -66,7 +66,7 @@ function formatResult(data: any): string {
  */
 export async function registerPlatformTools(
   server: McpServer,
-  client: SmartCallClient,
+  client: HalfCallClient,
   takenNames: Set<string>,
 ): Promise<number> {
   let tools: PlatformToolDef[]
@@ -74,12 +74,12 @@ export async function registerPlatformTools(
     const res = await client.listPlatformTools()
     tools = res?.data ?? []
   } catch (err: any) {
-    console.error(`[smartcall] platform tools unavailable, continuing with built-in tools only: ${err.message}`)
+    console.error(`[halfcall] platform tools unavailable, continuing with built-in tools only: ${err.message}`)
     return 0
   }
 
   // One conversation per toolkit process: multi-step flows (new_project → confirm_step …) keep their state.
-  const sessionId = process.env.SMARTCALL_SESSION_ID || randomUUID()
+  const sessionId = process.env.HALFCALL_SESSION_ID || process.env.SMARTCALL_SESSION_ID || randomUUID()
   let count = 0
   for (const tool of tools) {
     if (!tool.available) continue

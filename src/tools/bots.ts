@@ -1,6 +1,6 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
 import { z } from 'zod'
-import type { SmartCallClient } from '../client.js'
+import type { HalfCallClient } from '../client.js'
 
 const clueItemSchema = z.object({
   key: z.string(),
@@ -9,7 +9,7 @@ const clueItemSchema = z.object({
   required: z.boolean().optional(),
 })
 
-export function registerBotTools(server: McpServer, client: SmartCallClient) {
+export function registerBotTools(server: McpServer, client: HalfCallClient) {
   server.registerTool(
     'list_bots',
     {

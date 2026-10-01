@@ -1,8 +1,8 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
 import { z } from 'zod'
-import type { SmartCallClient } from '../client.js'
+import type { HalfCallClient } from '../client.js'
 
-export function registerProgramTools(server: McpServer, client: SmartCallClient) {
+export function registerProgramTools(server: McpServer, client: HalfCallClient) {
   server.registerTool(
     'list_programs',
     {

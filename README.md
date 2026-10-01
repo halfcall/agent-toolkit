@@ -10,7 +10,7 @@
 
   <br/>
 
-  [![npm version](https://img.shields.io/npm/v/smartcall-agent-toolkit.svg)](https://www.npmjs.com/package/smartcall-agent-toolkit)
+  [![npm version](https://img.shields.io/npm/v/halfcall-agent-toolkit.svg)](https://www.npmjs.com/package/halfcall-agent-toolkit)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
   <br/>
@@ -139,11 +139,11 @@ Your Agent now has a team that doesn't just talk — they close.
 ```json
 {
   "mcpServers": {
-    "smartcall": {
+    "halfcall": {
       "command": "npx",
-      "args": ["-y", "smartcall-agent-toolkit"],
+      "args": ["-y", "halfcall-agent-toolkit"],
       "env": {
-        "SMARTCALL_API_KEY": "sk-你的密钥"
+        "HALFCALL_API_KEY": "sk-你的密钥"
       }
     }
   }
@@ -154,11 +154,11 @@ Your Agent now has a team that doesn't just talk — they close.
 ```json
 {
   "mcpServers": {
-    "smartcall": {
+    "halfcall": {
       "command": "npx",
-      "args": ["-y", "smartcall-agent-toolkit"],
+      "args": ["-y", "halfcall-agent-toolkit"],
       "env": {
-        "SMARTCALL_API_KEY": "sk-你的密钥"
+        "HALFCALL_API_KEY": "sk-你的密钥"
       }
     }
   }
@@ -170,10 +170,10 @@ Your Agent now has a team that doesn't just talk — they close.
 Skill 教 Claude 理解平台概念和常用流程；工具本身仍由 MCP Server 提供，所以要先按方式 A 配好。
 
 ```bash
-git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/smartcall
+git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/halfcall
 ```
 
-在 Claude Code 里输入 `/smartcall` 即可激活。
+在 Claude Code 里输入 `/halfcall` 即可激活。
 
 ### 获取 API Key
 
@@ -270,10 +270,12 @@ git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/smartcall
 
 | 变量 | 必填 | 默认值 | 说明 |
 |------|------|--------|------|
-| `SMARTCALL_API_KEY` | 是 | — | 控制台里拿的 API 密钥 |
-| `SMARTCALL_BASE_URL` | 否 | `https://api.halfcall.cn` | API 地址，保持默认即可——halfcall.cn、uereport.com、onvocall.com 的账号都是同一个平台、同一套 API Key |
-| `SMARTCALL_TIMEOUT` | 否 | `30000` | 请求超时（毫秒） |
-| `SMARTCALL_SESSION_ID` | 否 | 每个进程随机 | 多步流程（如建项目）的会话 id；想在重启后接着之前的流程就固定一个值 |
+| `HALFCALL_API_KEY` | 是 | — | 控制台里拿的 API 密钥 |
+| `HALFCALL_BASE_URL` | 否 | `https://api.halfcall.cn` | API 地址，保持默认即可——halfcall.cn、uereport.com、onvocall.com 的账号都是同一个平台、同一套 API Key |
+| `HALFCALL_TIMEOUT` | 否 | `30000` | 请求超时（毫秒） |
+| `HALFCALL_SESSION_ID` | 否 | 每个进程随机 | 多步流程（如建项目）的会话 id；想在重启后接着之前的流程就固定一个值 |
+
+> 从旧包 `smartcall-agent-toolkit` 迁移：0.4.0 起包名改为 `halfcall-agent-toolkit`，环境变量改为 `HALFCALL_*`；旧的 `SMARTCALL_*` 仍然兼容，MCP 配置里把 `npx` 参数换成新包名即可。
 
 ## 本地开发
 
@@ -284,7 +286,7 @@ npm install
 npm run build
 
 # 本地运行
-SMARTCALL_API_KEY=sk-xxx npm start
+HALFCALL_API_KEY=sk-xxx npm start
 ```
 
 ## 关于我们

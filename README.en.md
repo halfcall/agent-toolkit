@@ -10,7 +10,7 @@
 
   <br/>
 
-  [![npm version](https://img.shields.io/npm/v/smartcall-agent-toolkit.svg)](https://www.npmjs.com/package/smartcall-agent-toolkit)
+  [![npm version](https://img.shields.io/npm/v/halfcall-agent-toolkit.svg)](https://www.npmjs.com/package/halfcall-agent-toolkit)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
   <br/>
@@ -139,11 +139,11 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
 ```json
 {
   "mcpServers": {
-    "smartcall": {
+    "halfcall": {
       "command": "npx",
-      "args": ["-y", "smartcall-agent-toolkit"],
+      "args": ["-y", "halfcall-agent-toolkit"],
       "env": {
-        "SMARTCALL_API_KEY": "sk-your-api-key"
+        "HALFCALL_API_KEY": "sk-your-api-key"
       }
     }
   }
@@ -154,11 +154,11 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
 ```json
 {
   "mcpServers": {
-    "smartcall": {
+    "halfcall": {
       "command": "npx",
-      "args": ["-y", "smartcall-agent-toolkit"],
+      "args": ["-y", "halfcall-agent-toolkit"],
       "env": {
-        "SMARTCALL_API_KEY": "sk-your-api-key"
+        "HALFCALL_API_KEY": "sk-your-api-key"
       }
     }
   }
@@ -170,10 +170,10 @@ Works with Claude Desktop, Claude Code, or any MCP-compatible AI client.
 The skill teaches Claude the platform's concepts and workflows; the tools themselves still come from the MCP server, so configure Option A first.
 
 ```bash
-git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/smartcall
+git clone git@github.com:halfcall/agent-toolkit.git ~/.claude/skills/halfcall
 ```
 
-Then type `/smartcall` in Claude Code to activate.
+Then type `/halfcall` in Claude Code to activate.
 
 ### Get Your API Key
 
@@ -270,10 +270,12 @@ Tools whose names clash with built-in ones get a `platform_` prefix (`platform_l
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `SMARTCALL_API_KEY` | Yes | — | Your API key from the dashboard |
-| `SMARTCALL_BASE_URL` | No | `https://api.halfcall.cn` | API endpoint. Keep the default — halfcall.cn, uereport.com and onvocall.com accounts all use the same platform and the same API keys |
-| `SMARTCALL_TIMEOUT` | No | `30000` | Request timeout in milliseconds |
-| `SMARTCALL_SESSION_ID` | No | random per process | Conversation id for multi-step platform flows (e.g. project creation); set it to share state across restarts |
+| `HALFCALL_API_KEY` | Yes | — | Your API key from the dashboard |
+| `HALFCALL_BASE_URL` | No | `https://api.halfcall.cn` | API endpoint. Keep the default — halfcall.cn, uereport.com and onvocall.com accounts all use the same platform and the same API keys |
+| `HALFCALL_TIMEOUT` | No | `30000` | Request timeout in milliseconds |
+| `HALFCALL_SESSION_ID` | No | random per process | Conversation id for multi-step platform flows (e.g. project creation); set it to share state across restarts |
+
+> Migrating from `smartcall-agent-toolkit`: since 0.4.0 the package is `halfcall-agent-toolkit` and env vars are `HALFCALL_*`. The old `SMARTCALL_*` names are still accepted — just switch the package name in your `npx` args.
 
 ## Development
 
@@ -284,7 +286,7 @@ npm install
 npm run build
 
 # Run locally
-SMARTCALL_API_KEY=sk-xxx npm start
+HALFCALL_API_KEY=sk-xxx npm start
 ```
 
 ## About
